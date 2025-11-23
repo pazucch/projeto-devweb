@@ -1,0 +1,441 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 10px;
+}
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+footer a:hover {
+    padding: 5px;
+    background-color: green;
+}
+
+header a:hover{
+    background-color: rgba(255, 208, 0, 0.815);
+    transform: scale(1.3);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-wrap: wrap; 
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+.active {
+    padding: 20px;
+    color: #fff;
+    background: #ffd000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(#000000a0, #000000a0),
+    url("../assets/download.jpeg") center/cover no-repeat;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 60px auto;
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.btn {
+    background:#ffbb00;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00000020;
+    text-align: center;
+    min-width: 280px; 
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+.card a:hover{
+    display: inline-block;
+    color: #c2bf00;
+    text-decoration: none;
+}
+
+.quem-somos-card {
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #111;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #0007;
+}
+
+.quem-somos-card:hover {
+    transform: scale(1.05);
+    background: #222;
+}
+
+.modal_q {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000a;
+    backdrop-filter: blur(3px);
+    overflow: auto;
+}
+
+.modal-content {
+    background: #fff;
+    width: 70%;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.integrantes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.perfil {
+    width: 160px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.perfil a:hover {
+    color:#ffbb00;
+}
+
+.apresentacao-geral {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    background: #ffffffd7;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #00000025;
+    animation: aparecer 1.2s ease forwards;
+    opacity: 0;
+}
+
+.apresentacao-geral h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+    animation: deslizarCima 1s ease forwards;
+    opacity: 0;
+}
+
+.apresentacao-geral a {
+    color: #e5b700;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.apresentacao-geral a:hover {
+    color: #b59700;
+    text-decoration: underline;
+}
+.apresentacao-geral hr {
+    width: 60%;
+    margin: 25px auto;
+    border: none;
+    border-top: 1px solid #dddddd;
+}
+
+.site-footer {
+    background: #111;
+    color: #e0e0e0;
+    padding: 40px 20px 20px 20px;
+    border-top: 3px solid #ffd000;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    color: #ffd000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+    font-size: 0.9em;
+}
+
+.footer-column ul li a:hover {
+    background-color: green;
+    text-decoration: none;
+    transform: none;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links [class^="icon-"] {
+    font-size: 1.2em;
+}
+
+.universidade-info {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #333;
+}
+
+.universidade-info a {
+    color: #ffd000;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.8em;
+    text-align: left;
+    opacity: 0.7;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes deslizarCima {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        margin-bottom: 15px;
+    }
+    header {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    
+    header a,
+    .active {
+        padding: 10px 10px;
+        font-size: 0.9em;
+    }
+    .hero {
+        padding: 50px 10px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        margin: 30px auto;
+        font-size: 1.1rem;
+    }
+
+    .cards {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .apresentacao-geral {
+        margin: 40px 15px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .apresentacao-geral h2 {
+        font-size: 1.8rem;
+    }
+
+    .quem-somos-card {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .integrantes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .fechar {
+        right: 15px;
+        top: 10px;
+    }
+}
+* {
+    box-sizing: border-box; 
+}

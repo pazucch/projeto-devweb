@@ -1,0 +1,349 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 10px;
+}
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+header a:hover{
+    background-color: rgba(255, 208, 0, 0.815);
+    transform: scale(1.3);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.active {
+    padding: 20px;
+    color: #fff;
+    background: #ffd000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    z-index: 2;
+}
+
+.intro {
+    width: 40%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 30px;
+}
+
+.timeline {
+    width: 50%;
+    margin: auto;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #0002;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.timeline-item .year {
+    background: #00b4ff;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.eras {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.era-card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #0002;
+}
+
+.curiosidades {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.curio {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #0002;
+}
+
+.historia-container {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.cards-historia {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 20px;
+    height: 300px;
+}
+
+.card-hist {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #00000020;
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    flex: 1; 
+    width: auto;
+}
+.card-hist p {
+    max-width: 240px; 
+    margin: auto;
+}
+.card-hist:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px #00000035;
+}
+.card-hist img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.site-footer {
+    background: #111;
+    color: #e0e0e0;
+    padding: 40px 20px 20px 20px;
+    border-top: 3px solid #ffd000;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    color: #ffd000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-column p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+    font-size: 0.9em;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: none;
+}
+
+.social-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links [class^="icon-"] {
+    font-size: 1.2em;
+}
+
+.universidade-info {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #333;
+}
+
+.universidade-info a {
+    color: #ffd000;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.8em;
+    text-align: left;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        margin-bottom: 15px;
+    }
+    header {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    
+    header a,
+    .active {
+        padding: 10px 10px;
+        font-size: 0.9em;
+    }
+    .banner { 
+        height: 180px; 
+        min-height: 150px; 
+    }
+    
+    .banner-title { 
+        font-size: 24px;
+        left: 15px; 
+        bottom: 5px; 
+    }
+
+    .intro, .timeline, .eras, .curiosidades, .historia-container {
+        width: 90%; 
+        margin: 30px auto; 
+        padding: 0 10px;
+    }
+    .intro { 
+        padding: 0; 
+    }
+
+    .timeline-item { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px; 
+        padding: 15px;
+    }
+    .timeline-item .year { 
+        margin-bottom: 0;
+    }
+    
+    .cards-historia {
+        flex-direction: column; 
+        height: auto;
+        padding: 0;
+        gap: 20px; 
+    }
+    .card-hist {
+        width: 100%; 
+    }
+    .card-hist p {
+        max-width: none;
+    }
+    .card-hist:hover {
+        transform: none; 
+        box-shadow: 0 4px 10px #00000020;
+    }
+}

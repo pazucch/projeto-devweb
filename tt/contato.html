@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/contato.css">
+        <link rel="shortcut icon" href="./assets/icon(ia).png">
+        <title>Na Trave e no Topo</title>
+    </head>
+
+    <body>
+
+        <section class="titulo">
+            <div class="esquerda">
+                <img src="./assets/icon(ia).png" height="50px" width="50px">
+                <h1>T&T</h1>
+            </div>
+            <div class="direita">
+                <h2>Na Trave e no Topo</h2>
+            </div>
+        </section>
+
+        <header>
+            <a href="./index.html">Home</a>
+            <a href="./historia.html">História do Brasileirão</a>
+            <a href="./noticias.html">Notícias</a>
+            <a href="./seriea.html">Série A</a>
+            <a href="./serieb.html">Série B</a>
+            <a href="./copamundo.html">Copa do Mundo</a>
+            <a href="./contato.html" class="active">Contato</a>
+        </header>
+        <div id="bodyback">
+        <div class="container_geral">
+
+            <form id="form_contato">
+                <h1>Fale Conosco</h1>
+                <input type="text" placeholder="Primeiro nome" id="primeiroNome">
+                <input type="text" placeholder="Sobrenome" id="sobreNome">
+                <input type="email" placeholder="Endereço de e-mail" id="email">
+                
+                <select id="assunto">
+                    <option value="">Selecione o assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="elogio">Elogio</option>
+                </select>
+                
+                <textarea placeholder="Escreva aqui sua ideia." id="mensagem"></textarea>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Desejo receber newsletter</label>
+                </div>
+
+                <button type="button" id="botaoEnviar">Enviar</button>
+                <div id="mensagemFeedback"></div>
+                    <div class="positivo">
+                        <h3>Estudamos na Universidade Positivo.</h3>
+                        <div class="positivo">
+                            <a href="https://www.up.edu.br/" target="_blank"><img src="./assets/UP.jpg"></a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="coluna_info">
+
+                <h2>Sobre Nós</h2>
+                <p>Estamos sempre à disposição para ajudar!</p>
+
+                <div class="lista-marcadores">
+                    <h3>Nossos Serviços:</h3>
+                    <ul>
+                        <li>Notícias atualizadas</li>
+                        <li>Estatísticas completas</li>
+                        <li>Análises de jogos</li>
+                    </ul>
+                </div>
+
+                <div class="lista-numerada">
+                    <h3>Top 3 Campeonatos:</h3>
+                    <ol>
+                        <li>Brasileirão Série A</li>
+                        <li>Copa do Brasil</li>
+                        <li>Libertadores</li>
+                    </ol>
+                </div>
+
+                <div class="tabela-container">
+                    <h3>Horários de Jogos</h3>
+                    <table>
+                        <tr>
+                            <th>Campeonato</th>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                        <tr>
+                            <td>Brasileirão</td>
+                            <td>Sábado</td>
+                            <td>16:30</td>
+                        </tr>
+                        <tr>
+                            <td>Copa do Brasil</td>
+                            <td>Quarta</td>
+                            <td>21:30</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="destaque-texto">
+                    <p><strong>Importante verificar sempre os horários.</strong></p>
+                    <p><em>Os jogos podem sofrer alterações.</em></p>
+                    <p class="marcador">⚽ Canais de TV que transmitem os jogos: <a href="https://globoplay.globo.com/categorias/campeonato-brasileiro/">aqui</a:></p>
+                </div>
+
+                <div class="info-icons">
+                    <div class="info-item">
+                        <img src="./assets/whats.png" class="icon">
+                        <a href="https://wa.me/5541987489472" target="_blank">Contate-nos através do WhatsApp</a>
+                    </div>
+
+                    <div class="info-item">
+                        <img src="./assets/gmail.png" class="icon">
+                        <span>matpazch@hotmail.com</span>
+                    </div>
+
+                    <div class="info-item">
+                        <img src="./assets/maps.png" class="icon">
+                        <a href="https://maps.app.goo.gl/7qqm8Rv8VVLxTZ9W6" target="_blank">Universidade Positiivo - Campus Ecoville</a>
+                    </div>
+                </div>
+
+                <div class="atendimento">
+                    <h3>Horário de Atendimento</h3>
+                    <p>Seg. a Sex: <strong>08h às 18h</strong></p>
+                    <p>Sábados: <strong>09h às 14h</strong></p>
+                    <p>Domingos: <strong>Fechado</strong></p>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="interacao-js">
+            <button id="btnMudarCores">Mudar Cores da Página</button>
+            <div id="resultadoInteracao"></div>
+        </div>
+
+        </div>
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <div class="footer-column sobre-nos">
+                    <h3>Na Trave e no Topo (T&T)</h3>
+                    <p>O seu portal de notícias focado no melhor do futebol brasileiro e internacional, com análises, estatísticas e a história dos maiores campeonatos.</p>
+                </div>
+
+                <div class="footer-column links-campeonatos">
+                    <h3>Cobertura</h3>
+                    <ul>
+                        <li><a href="./seriea.html">Brasileirão Série A</a></li>
+                        <li><a href="./serieb.html">Brasileirão Série B</a></li>
+                        <li><a href="./copamundo.html">Copa do Mundo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column contato-social">
+                    <h3>Fale Conosco</h3>
+                    <ul class="social-links">
+                        <li><a href="./contato.html"><span class="icon-mail">✉️</span> Contato</a></li>
+                        <li><a href="https://wa.me/SEUNUMERO" target="_blank"><span class="icon-whats">📞</span> WhatsApp</a></li>
+                        <li><a href="mailto:SEUEMAIL@exemplo.com"><span class="icon-email">📧</span> E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="universidade-info">
+                        <p>Estudamos na Universidade Positivo.</p>
+                        <a href="https://www.up.edu.br/" target="_blank">Visitar UP</a>
+                    <p class="copyright">© 2025 Na Trave e No Topo. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <script src="./js/contato.js" defer></script>
+    </body>
+</html>
