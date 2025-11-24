@@ -1,9 +1,9 @@
 const serieA = [
-    { nome: "Flamengo", pontos: 71, logo: "assets/fla.png", titulos: "1980, 1982, 1983, 1992, 2009, 2019, 2020" },
-    { nome: "Palmeiras", pontos: 68, logo: "assets/palm.png", titulos: "1972, 1973, 1993, 1994, 2016, 2018, 2022, 2023" },
-    { nome: "Cruzeiro", pontos: 64, logo: "assets/Cruzeiro.png", titulos: "1966, 2003, 2013, 2014" },
-    { nome: "Mirassol", pontos: 59, logo: "assets/Mirassol.png", titulos: "Ainda não possui títulos da Série A" },
-    { nome: "Bahia", pontos: 53, logo: "assets/bahia.png", titulos: "1959, 1988" }
+    { nome: "Flamengo", pontos: 71, logo: "../assets/fla.png", titulos: "1980, 1982, 1983, 1992, 2009, 2019, 2020" },
+    { nome: "Palmeiras", pontos: 68, logo: "../assets/palm.png", titulos: "1972, 1973, 1993, 1994, 2016, 2018, 2022, 2023" },
+    { nome: "Cruzeiro", pontos: 64, logo: "../assets/Cruzeiro.png", titulos: "1966, 2003, 2013, 2014" },
+    { nome: "Mirassol", pontos: 59, logo: "../assets/Mirassol.png", titulos: "Ainda não possui títulos da Série A" },
+    { nome: "Bahia", pontos: 53, logo: "../assets/bahia.png", titulos: "1959, 1988" }
 ];
 
 function carregarSerie(lista, elementoId) {

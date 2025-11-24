@@ -1,8 +1,8 @@
 const serieB = [
-    { nome: "Coritiba", pontos: 71, logo: "assets/coxa.png", titulos: "2007, 2010" },
-    { nome: "Athlético PR", pontos: 68, logo: "assets/furacao.png", titulos: "1995" },
-    { nome: "Criciúma", pontos: 64, logo: "assets/criciuma.png", titulos: "2002" },
-    { nome: "Goiás", pontos: 59, logo: "assets/goias.png", titulos: "1999, 2012" },
+    { nome: "Coritiba", pontos: 71, logo: "../assets/coxa.png", titulos: "2007, 2010" },
+    { nome: "Athlético PR", pontos: 68, logo: "../assets/furacao.png", titulos: "1995" },
+    { nome: "Criciúma", pontos: 64, logo: "../assets/criciuma.png", titulos: "2002" },
+    { nome: "Goiás", pontos: 59, logo: "../assets/goias.png", titulos: "1999, 2012" },
 ];
 
 function carregarSerie(lista, elementoId) {
