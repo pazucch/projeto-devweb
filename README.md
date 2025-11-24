@@ -1,5 +1,3 @@
-# projeto-devweb
-
 # Projeto DevWeb — Na Trave e no Topo
 
 Este projeto é um site informativo focado em futebol brasileiro e internacional, trazendo conteúdos como história, séries A e B, Copa do Mundo, curiosidades, notícias e informações de contato.  
